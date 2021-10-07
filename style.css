@@ -8,11 +8,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: center;
   margin: 10px 0 10px;
 }
+
+/* 1ER SECTION */
 
 .contener_localisation_resto {
   width: 100%;
@@ -45,12 +48,37 @@ header {
 .btn_explor {
   background-image: linear-gradient(to bottom, #ff79da, #9356dc);
   border: none;
-  height: 40px;
+  height: 45px;
   width: 200px;
-  border-radius: 20px;
+  border-radius: 22px;
   color: #fff;
   cursor: pointer;
   box-shadow: 3px 3px 3px rgb(206, 206, 206);
   margin-top: 10px;
   margin-bottom: 50px;
+}
+
+/* 2EME SECTION */
+
+.h1_section2 {
+  margin: 40px 0 0 20px;
+}
+
+.band_1 {
+  display: flex;
+  align-items: center;
+  margin: 30px 0 0 25px;
+}
+
+.band_1 .number {
+  margin-right: 20px;
+  background-color: #9356dc;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
 }
