@@ -184,6 +184,7 @@ figure {
   font-size: 25.4px;
   margin-left: -0.5px;
   background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .txt_bold {
