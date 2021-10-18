@@ -276,6 +276,16 @@ figure {
   padding-left: 25px;
 }
 
+.coeur_plein2:hover {
+  transition: 1s;
+  opacity: 1;
+  background: linear-gradient(to top, #ff79da, #9356dc);
+  font-size: 25.4px;
+  margin-left: -0.5;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .border_h2 {
   background-color: #99e2d0;
   height: 3px;
@@ -284,154 +294,92 @@ figure {
   padding-left: 35px;
 }
 
-.band_menu:hover {
-  animation: slideleft;
-}
+/* ANIMATION SELECTION */
 
-.txt_light_menu {
-  font-weight: normal;
-}
-
-.txt_prix_contener {
+.band_contener {
+  background: white;
+  margin: 0 25px 0 25px;
+  border-radius: 15px;
   display: flex;
   justify-content: space-between;
-  width: 95%;
-  margin: -23px 0 -5px 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  opacity: 1;
+  padding: 0 0 0 7px;
+
+  margin-top: 15px;
 }
 
-.contener_band_menu {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.band_menu {
-  margin: 30px 0 0 18px;
-  background-color: #f3f3f38f;
-  border-radius: 18px;
-  width: 87%;
-  padding: 1px 0 5px 10px;
-  box-shadow: 5px 5px 10px #e9e9e9;
-  font-weight: bold;
-  border-right: 0px solid #99e2d0;
-  box-sizing: border-box;
-  max-height: 78px;
-  white-space: nowrap;
-}
-
-.band_menu:hover {
-  animation: band_anim 0.5s forwards;
-}
-
-.band_menu_35:hover i {
-  margin-left: -32px;
-}
-
-.txt_light_menu {
-  font-weight: normal;
-}
-
-.txt_prix_contener {
+.txtMenu_prix {
   display: flex;
   justify-content: space-between;
-  width: 95%;
-  margin: -23px 0 -5px 0;
-}
-
-@keyframes band_anim {
-  from {
-    border-right: 0px solid transparent;
-  }
-  to {
-    border-right: 70px solid #99e2d0;
-  }
-}
-
-.band_cercle {
-  transform: translateX(68px);
-  margin-top: -10px;
-  font-size: 1.3em;
-  color: white;
-  padding: 10px;
-}
-
-.band_menu:hover i {
-  transform: rotate(1turn);
-  transition-duration: 0.5s;
-  position: relative;
-}
-
-.scroll_menu_prix {
+  flex: 1;
+  align-items: flex-end;
+  gap: 1rem;
   overflow: hidden;
 }
 
-.point_x_3 {
-  display: none;
-  transform: translateX(25px);
+.slide_right_contener {
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  opacity: 0;
 }
 
-.band_menu:hover .point_x_3 {
-  display: inline;
+.band_contener:hover .slide_right_contener {
+  opacity: 1;
+  width: 4rem;
+  transition: width 0.4s ease-in-out, opacity 0.8s;
 }
 
-.txt_light_menu_scroll {
-  font-weight: normal;
-  margin-right: -21px;
+.band_contener .slide_right_contener {
+  transition: width 0.4s, opacity 0.35s;
 }
 
-/* DECALAGE PRIX ET I */
-/* PRIX */
-
-.decal_menu_prix_25 {
-  transform: translateX(80px);
+.slide_right_contener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.band_menu:hover .decal_menu_prix_25 {
-  transform: translateX(55px);
-  transition-duration: 0.7s;
+.slide_right_contener i {
+  background-color: transparent;
+  border-radius: 0 15px 15px 0;
+  font-size: 20px;
+  color: white;
+  padding-top: 0.5px;
 }
 
-.decal_menu_prix_35 {
-  transform: translateX(45px);
+.band_contener:hover .slide_right_contener i {
+  transform: rotate(1turn);
+  transition-duration: 0.5s;
 }
 
-.band_menu:hover .decal_menu_prix_35 {
-  transform: translateX(10px);
-  transition-duration: 0.7s;
+/* FORMATAGE TEXTE */
+
+.menutxt_bold {
+  font-weight: bold;
 }
 
-.band_scrollmenu_20 {
-  max-width: 340px;
+.band_contener .txtMenu_prix .txt_menu {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.decal_menu_prix_20 {
-  transform: translateX(35px);
+.band_contener .txtMenu_prix .txt_menu .menutxt_bold {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.band_menu:hover .decal_menu_prix_20 {
-  transform: translateX(40px);
-  transition-duration: 1.45s;
+.band_contener .txtMenu_prix .txt_menu .menutxt_light {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.point_x_3 {
-  margin-left: -2px;
-}
-
-.txt_light_menu {
-  width: -1px;
-}
-
-/* I */
-
-.band_menu_35:hover i {
-  margin-left: -32px;
-}
-
-.h2_plats {
-  font-weight: normal;
-  font-size: 1em;
-  color: rgba(0, 0, 0, 0.52);
-  padding-left: 25px;
-  margin-top: 40px;
+.marg_prix {
+  margin-right: 15px;
 }
 
 /* FOOTER */
