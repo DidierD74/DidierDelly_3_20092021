@@ -73,16 +73,35 @@ header img {
 }
 
 .btn_explor {
-  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-image: linear-gradient(to right, #ff79da, #9356dc);
   border: none;
-  height: 45px;
+  height: 53px;
   width: 200px;
-  border-radius: 22px;
+  border-radius: 30px;
   color: #fff;
   cursor: pointer;
   box-shadow: 3px 3px 3px rgb(206, 206, 206);
   margin-top: 10px;
   margin-bottom: 50px;
+  font-size: 1em;
+  transition-duration: 0.3s;
+}
+
+.btn_explor:hover {
+  filter: brightness(1.1);
+  box-shadow: 3px 3px 10px rgb(155, 150, 150);
+  transition-duration: 0.5s;
+}
+
+.btn_menu {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_menu_2 {
+  margin-top: 50px;
 }
 
 /* 2EME SECTION - FONCTIONNEMENT */
@@ -210,16 +229,24 @@ figure {
   margin-top: 5px;
 }
 
+/* COEUR */
+
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .coeur_vide {
   margin-right: -25px;
 }
 
 .coeur_plein {
   opacity: 0;
+  color: transparent;
 }
 
 .coeur_plein:hover {
-  transition: 1s;
+  transition: 0.4s;
   opacity: 1;
   color: transparent;
   background: linear-gradient(to top, #ff79da, #9356dc);
@@ -227,10 +254,22 @@ figure {
   margin-left: -0.5px;
   background-clip: text;
   -webkit-background-clip: text;
+  animation: coeuranim 1s;
+}
+
+.coeur_vide:hover {
+  opacity: 0;
+  position: relative;
 }
 
 .txt_bold {
   font-weight: bold;
+}
+
+@keyframes coeuranim {
+  from {
+    opacity: ;
+  }
 }
 
 /* MENU */
