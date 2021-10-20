@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 body a {
@@ -240,6 +241,10 @@ figure {
   margin-top: 5px;
 }
 
+/* ------------------------------ *\
+               COEUR
+\* ------------------------------ */
+
 /* COEUR INDEX */
 
 .heart_index {
@@ -282,12 +287,15 @@ figure {
 
 /* COEUR MENU */
 
-.divMenu_h1_coeur {
+.contener-titre_coeur {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 87%;
-  margin-left: 25px;
+
+  margin: 0 25px 0 25px;
+}
+
+.divMenu_h1_coeur {
   padding-top: 15px;
   font-size: 1.2em;
 }
@@ -296,6 +304,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2em;
 }
 
 .spanMenu_coeurvide {
@@ -303,7 +312,7 @@ figure {
 }
 
 .coeurMenu_vide {
-  transform: translateX(19px);
+  transform: translateX(23px);
 }
 
 .heart_menu:hover .coeurMenu_plein {
@@ -387,6 +396,10 @@ figure {
   margin: -8px 0 0 25px;
   padding-left: 35px;
 }
+
+/* ------------------------------ *\
+         SLIDE AVEC ENCOCHE
+\* ------------------------------ */
 
 /* ANIMATION SELECTION */
 
@@ -476,7 +489,9 @@ figure {
   margin-right: 15px;
 }
 
-/* ANIMATION MENU */
+/* ------------------------------ *\
+    ANIMATION PROGRESSIVE MENU
+\* ------------------------------ */
 
 @keyframes menuAnim {
   0% {
@@ -510,7 +525,7 @@ figure {
           LOADING SPINNER
 \* ------------------------------ */
 
-/* .loading_spinner {
+.loading_spinner {
   position: fixed;
   top: 0;
   left: 0;
@@ -522,7 +537,7 @@ figure {
   justify-content: center;
   animation: loadercover 3s forwards;
   animation-timing-function: steps(1, end);
-} */
+}
 
 .loader {
   width: 100px;
@@ -671,4 +686,56 @@ footer a {
 footer p {
   width: max-content;
   cursor: pointer;
+}
+
+/* ------------------------------ *\
+          MEDIA QUERIES
+\* ------------------------------ */
+
+/* index */
+
+@media screen and (min-width: 857px) {
+  .contener_fonctionnement {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+  }
+  /* .band_n3 {
+    transform: translateX(50%);
+  } */
+  .contener_restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .contener_figure {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1269px) {
+  .contener-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-left: 310px;
+    gap: 80px;
+  }
+
+  .contener-footer h1 {
+    margin-left: -400px;
+  }
+  .foot_line1 {
+    margin-top: 10px;
+  }
+  .foot_line2 {
+    margin-top: 10px;
+  }
+  .footer_mention p {
+    transform: translateY(30px);
+  }
+
+  .txt_contact_interline {
+    margin-top: 45px;
+  }
 }
