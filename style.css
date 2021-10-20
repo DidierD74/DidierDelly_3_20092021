@@ -111,13 +111,17 @@ header img {
   font-size: 1.5em;
 }
 
+.contener_fonctionnement {
+  padding: 0 25px 0 25px;
+}
+
 .band {
   display: flex;
   align-items: center;
-  margin: 30px 0 0 26px;
+  margin: 30px 0 0 0;
   background-color: #f3f3f38f;
   border-radius: 28px;
-  width: 87%;
+  width: 100%;
   padding: 13px 0 13px 0;
   box-shadow: 5px 5px 10px #e9e9e9;
   font-weight: bold;
@@ -208,8 +212,15 @@ figcaption i {
   margin: 5px 5px 25px 0;
 }
 
-figure {
+.contener_figure {
   margin: 20px 25px 0 25px;
+
+  box-sizing: border-box;
+}
+
+figure {
+  /* margin: 20px 25px 0 25px; */
+  margin: 20px 0px 0 0px;
   background-color: #fff;
   height: 265px;
   border-radius: 18px;
@@ -229,41 +240,91 @@ figure {
   margin-top: 5px;
 }
 
-/* COEUR */
+/* COEUR INDEX */
 
-.heart {
+.heart_index {
   display: flex;
   justify-content: center;
-  align-items: center;
+  height: 30px;
+  width: 30px;
+  transform: translateX(-10px);
 }
+
 .coeur_vide {
-  margin-right: -25px;
+  transform: translateX(30px);
+  margin-left: -30px;
+}
+
+.span_coeurvide {
+  transform: translateX(-0px);
+}
+
+.heart_index:hover .coeur_plein {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.heart_index:hover .coeur_vide {
+  opacity: 0;
+  transition-duration: 0.3s;
 }
 
 .coeur_plein {
   opacity: 0;
-  color: transparent;
 }
 
-.coeur_plein:hover {
-  transition: 0.4s;
-  opacity: 1;
+.coeur_plein {
   color: transparent;
   background: linear-gradient(to top, #ff79da, #9356dc);
-  font-size: 25.4px;
-  margin-left: -0.5px;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: coeuranim 1s;
 }
 
-.coeur_vide:hover {
+/* COEUR MENU */
+
+.divMenu_h1_coeur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 87%;
+  margin-left: 25px;
+  padding-top: 15px;
+  font-size: 1.2em;
+}
+
+.heart_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spanMenu_coeurvide {
+  margin-left: -17px;
+}
+
+.coeurMenu_vide {
+  transform: translateX(19px);
+}
+
+.heart_menu:hover .coeurMenu_plein {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.heart_menu:hover .coeurMenu_vide {
   opacity: 0;
-  position: relative;
+  transition-duration: 0.3s;
 }
 
-.txt_bold {
-  font-weight: bold;
+.coeurMenu_plein {
+  opacity: 0;
+}
+
+.coeurMenu_plein {
+  color: transparent;
+  background: linear-gradient(to top, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* MENU */
@@ -449,7 +510,7 @@ figure {
           LOADING SPINNER
 \* ------------------------------ */
 
-.loading_spinner {
+/* .loading_spinner {
   position: fixed;
   top: 0;
   left: 0;
@@ -461,7 +522,7 @@ figure {
   justify-content: center;
   animation: loadercover 3s forwards;
   animation-timing-function: steps(1, end);
-}
+} */
 
 .loader {
   width: 100px;
