@@ -450,7 +450,7 @@ figure {
 \* ------------------------------ */
 
 .loading_spinner {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -478,7 +478,18 @@ figure {
 .loader-quart2 {
   position: absolute;
   transform: translateX(50%, -50%);
-  margin-left: 70px;
+  margin-left: 98px;
+}
+
+.loader-point {
+  position: absolute;
+  top: 275px;
+  margin-left: 18px;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #9356dc;
+  opacity: 50%;
 }
 
 .loader-quart::after {
@@ -491,27 +502,29 @@ figure {
   width: 100px;
   height: 100px;
   border-radius: 100px;
-  border: 6px solid transparent;
+  border: 15px solid transparent;
   border-top-color: #9356dc;
   border-bottom-color: #9356dc;
   animation: spin 1s linear infinite;
+  opacity: 50%;
 }
 
 .loader-quart2::after {
   position: absolute;
-  top: 241px;
+  top: 245px;
   bottom: 0px;
   right: 0px;
   content: "";
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  border: 10px solid transparent;
+  border: 15px solid transparent;
   border-top-color: #ff79d986;
   border-bottom-color: #ff79d986;
-  animation: spin_2 2.5s linear infinite;
+  animation: spin_2 3s linear infinite;
   display: flex;
   justify-content: center;
+  opacity: 90%;
 }
 
 @keyframes spin {
@@ -534,7 +547,7 @@ figure {
 
 @keyframes loadercover {
   0% {
-    opacity: 1;
+    opacity: 85%;
     transform: translateX(0%);
   }
   100% {
