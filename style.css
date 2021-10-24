@@ -397,6 +397,10 @@ figure {
   padding-left: 35px;
 }
 
+.h2_ajustement {
+  padding-top: 30px;
+}
+
 /* ------------------------------ *\
          SLIDE AVEC ENCOCHE
 \* ------------------------------ */
@@ -811,7 +815,6 @@ footer p {
   .contener_Menu {
     display: flex;
     justify-content: center;
-
     grid-auto-rows: repeat(1, 3fr);
     margin: auto;
     display: grid;
@@ -829,6 +832,10 @@ footer p {
   .contener-titre_coeur {
     display: flex;
     justify-content: center;
+  }
+
+  .h2_ajustement {
+    padding-top: 0;
   }
 }
 
