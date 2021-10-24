@@ -717,9 +717,7 @@ footer p {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
   }
-  /* .band_n3 {
-    transform: translateX(50%);
-  } */
+
   .contener_restaurants {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -728,45 +726,6 @@ footer p {
     width: 95%;
   }
 }
-
-/* Footer responsive */
-
-/* @media screen and (min-width: 1269px) {
-  .contener-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    padding-left: 310px;
-    gap: 80px;
-  }
-
-  .contener-footer h1 {
-    margin-left: -400px;
-    text-align: center;
-  }
-  .foot_line1 {
-    margin-top: 10px;
-  }
-  .foot_line2 {
-    margin-top: 10px;
-  }
-  .footer_mention p {
-    transform: translateY(30px);
-  }
-
-  .txt_contact_interline {
-    margin-top: 45px;
-  }
-
-  .contact_menu_ajust {
-    transform: translateY(0px);
-  }
-
-  .h2_menu {
-    transform: translateY(6px);
-  }
-} */
 
 /* Footer responsive */
 
@@ -781,8 +740,6 @@ footer p {
     grid-template-areas:
       "titre_menu titre_menu titre_menu titre_menu"
       "icone_fourchette icone_main mention contcat";
-    /* padding-left: 310px;
-    gap: 80px; */
   }
   .contener-footer h1 {
     text-align: center;
@@ -808,10 +765,6 @@ footer p {
 
   .span_contact {
     transform: translateY(1px);
-  }
-
-  .h1_menu {
-    /* margin-left: -400px; */
   }
 }
 
@@ -855,48 +808,36 @@ footer p {
 }
 
 @media screen and (min-width: 906px) and (max-width: 957px) {
-  .contener_Menu {
-  }
   .band_contener {
     max-width: 240px;
   }
 }
 
 @media screen and (min-width: 958px) and (max-width: 999px) {
-  .contener_Menu {
-  }
   .band_contener {
-    max-width: 270px;
+    max-width: 260px;
   }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1023px) {
-  .contener_Menu {
-  }
   .band_contener {
     max-width: 270px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1118px) {
-  .contener_Menu {
-  }
   .band_contener {
     max-width: 290px;
   }
 }
 
 @media screen and (min-width: 1119px) and (max-width: 1300px) {
-  .contener_Menu {
-  }
   .band_contener {
-    max-width: 315px;
+    max-width: 300px;
   }
 }
 
-@media screen and (min-width: 1119px) {
-  .contener_Menu {
-  }
+@media screen and (min-width: 1300px) {
   .band_contener {
     max-width: 330px;
   }
