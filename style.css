@@ -462,6 +462,10 @@ figure {
 }
 
 /* FORMATAGE TEXTE */
+.txt_menu {
+  line-height: 80%;
+  margin-left: 7px;
+}
 
 .menutxt_bold {
   font-weight: bold;
@@ -712,7 +716,9 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1269px) {
+/* Footer responsive */
+
+/* @media screen and (min-width: 1269px) {
   .contener-footer {
     display: flex;
     flex-direction: row;
@@ -724,6 +730,7 @@ footer p {
 
   .contener-footer h1 {
     margin-left: -400px;
+    text-align: center;
   }
   .foot_line1 {
     margin-top: 10px;
@@ -738,4 +745,173 @@ footer p {
   .txt_contact_interline {
     margin-top: 45px;
   }
+
+  .contact_menu_ajust {
+    transform: translateY(0px);
+  }
+
+  .h2_menu {
+    transform: translateY(6px);
+  }
+} */
+
+/* Footer responsive */
+
+@media screen and (min-width: 811px) {
+  * body {
+    background-color: transparent;
+  }
+  .contener-footer {
+    margin-left: 10%;
+    display: grid;
+
+    grid-template-areas:
+      "titre_menu titre_menu titre_menu titre_menu"
+      "icone_fourchette icone_main mention contcat";
+    /* padding-left: 310px;
+    gap: 80px; */
+  }
+  .contener-footer h1 {
+    text-align: center;
+    transform: translateX(-65px);
+    font-size: 1.7em;
+    margin-bottom: -15px;
+  }
+  .foot_line1 {
+    margin-top: 10px;
+  }
+  .foot_line2 {
+    margin-top: 10px;
+  }
+  .footer_mention p {
+    transform: translateY(30px);
+  }
+
+  .txt_contact_interline {
+    margin-top: 45px;
+  }
+
+  .span_contact {
+    transform: translateY(1px);
+  }
+
+  .h1_menu {
+    /* margin-left: -400px; */
+  }
+}
+
+/* MENU RESPONSIVE */
+
+@media screen and (min-width: 811px) {
+  .btn_menu_2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    transform: translateY(30px);
+  }
+  .contener_Menu {
+    display: flex;
+    justify-content: center;
+
+    grid-auto-rows: repeat(1, 3fr);
+    margin: auto;
+    display: grid;
+    grid-template-areas: "entrees plats desserts";
+  }
+
+  .band_contener {
+    width: auto;
+    max-width: 220px;
+    width: auto;
+    display: flex;
+    justify-content: left;
+  }
+
+  .contener-titre_coeur {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 906px) and (max-width: 957px) {
+  .contener_Menu {
+  }
+  .band_contener {
+    max-width: 240px;
+  }
+}
+
+@media screen and (min-width: 958px) and (max-width: 999px) {
+  .contener_Menu {
+  }
+  .band_contener {
+    max-width: 270px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1023px) {
+  .contener_Menu {
+  }
+  .band_contener {
+    max-width: 270px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1118px) {
+  .contener_Menu {
+  }
+  .band_contener {
+    max-width: 290px;
+  }
+}
+
+@media screen and (min-width: 1119px) and (max-width: 1300px) {
+  .contener_Menu {
+  }
+  .band_contener {
+    max-width: 315px;
+  }
+}
+
+@media screen and (min-width: 1119px) {
+  .contener_Menu {
+  }
+  .band_contener {
+    max-width: 330px;
+  }
+}
+
+/* ÉLÉMENTS GRID AREAS RESPONSIVE MENU */
+.entrees {
+  grid-area: entrees;
+  margin: 0 auto;
+}
+.plats {
+  grid-area: plats;
+  margin: 0 auto;
+}
+.desserts {
+  grid-area: desserts;
+  margin: 0 auto;
+}
+
+/* ÉLÉMENTS GRID AREAS RESPONSIVE FOOTER */
+
+.h1_menu {
+  grid-area: titre_menu;
+}
+
+.foot_line1 {
+  grid-area: icone_fourchette;
+}
+
+.foot_line2 {
+  grid-area: icone_main;
+}
+
+.span_mention {
+  grid-area: mention;
+}
+
+.span_contact {
+  grid-area: contcat;
 }
