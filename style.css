@@ -911,7 +911,7 @@ footer span {
   grid-area: desserts;
 }
 
-/* ÉLÉMENTS GRID AREAS RESPONSIVE FOOTER */
+/* ÉLÉMENTS GRID AREAS RESPONSIVE DU FOOTER */
 
 .h1_menu {
   grid-area: titre_menu;
